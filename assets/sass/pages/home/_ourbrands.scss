@@ -1,0 +1,76 @@
+.our_brand_image_div__conatiner {
+  height: 9.5rem;
+
+  @include xldesktop {
+    height: 12.5rem;
+  }
+
+  // filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.1));
+
+  & > img {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0 100%, 0 32%);
+    // box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.1));
+  }
+
+  & > div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba($color: #fff, $alpha: 1);
+    @include all_fonts_styles($fs-xxmd, $fw-normal, inherit, $white-color);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
+
+.Brands {
+  background: linear-gradient(
+    90deg,
+    #f2eeee 0%,
+    #fff 0%,
+    #ffff 50%,
+    #f2eeee 50%
+  );
+}
+
+.welcome_back_color {
+  background: transparent
+    linear-gradient(90deg, #000000 0%, #000000 63%, #b70814 100%);
+  @include border-notch(0rem, 0rem, 0rem, 3rem);
+}
+
+.welcome_position {
+  @include xldesktop {
+    position: absolute;
+    transform: translate(-168%, 0);
+  }
+
+  @include desktop {
+    position: absolute;
+    transform: translate(-150%, -10%);
+  }
+
+  @include tablet {
+    position: absolute;
+    transform: translate(-71%, -36%);
+  }
+
+  @include mobile {
+    position: absolute;
+    transform: translate(5%, 58%);
+  }
+}
+
+.welcome_image {
+  @include border-notch(0rem, 3rem, 0rem, 0rem);
+
+  @include xldesktop {
+    @include border-notch(0rem, 5rem, 0rem, 0rem);
+  }
+}

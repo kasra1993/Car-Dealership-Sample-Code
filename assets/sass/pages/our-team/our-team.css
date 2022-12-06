@@ -1,0 +1,14 @@
+.our_team_div__container {
+  background: url("/images/about-us/our-team-circle.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 204px 102px;
+  background-attachment: fixed;
+} /*# sourceMappingURL=our-team.css.map */
+
+.home_div__secial_slider.active {
+  scale: 1.5;
+}
+.home_div__secial_slider.deactive {
+  scale: 0;
+}

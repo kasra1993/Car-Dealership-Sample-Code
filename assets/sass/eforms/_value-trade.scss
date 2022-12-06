@@ -1,0 +1,5 @@
+.value_trade_title {
+  @include mobile {
+    @include all_fonts_styles($fs-xxmd, $fw-semibold, inherit, $black-color);
+  }
+}

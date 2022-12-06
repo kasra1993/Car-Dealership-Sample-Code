@@ -1,0 +1,41 @@
+// .vehicle_options_toggle_div__container {
+//   background-color: $xxx-gray-color;
+//   border-radius: 5px;
+//   height: 3.75rem;
+//   position: relative;
+//   cursor: pointer;
+// }
+// .vehicle_options_toggle_img__style {
+//   position: relative;
+//   right: 20px;
+// }
+// .vehicle_options_toggle_span__style {
+//   border: 1px solid #ddd;
+// }
+.icon {
+  background-color: #000;
+  color: #fff;
+  &:hover {
+    background-color: #48932b;
+  }
+}
+.accordion_main {
+  &:hover {
+    color: #48932b;
+  }
+}
+.accordion-body {
+  border: 1px solid #ddd;
+}
+// .vehicle_options_collapse_div__container {
+//   @include all_fonts_styles($fs-md, $fw-normal, Corbert, $white-color);
+
+//   border-radius: 5px;
+//   min-height: 3rem;
+//   &:nth-child(odd) {
+//     background-color: $xxxx-gray-color;
+//   }
+//   &:nth-child(even) {
+//     background-color: $xx-gray-color;
+//   }
+// }

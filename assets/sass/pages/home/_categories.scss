@@ -1,0 +1,91 @@
+// .home_div__categories_container {
+//   & > div {
+//     height: 316.75px !important;
+//   }
+// }
+// .home_h4__categories_header_title {
+//   @include all_fonts_styles($fs-xl, 500, Montserrat, $white-color);
+// }
+// .home_button__categories {
+//   @include yellow_button(5px);
+//   @include all_fonts_styles($fs-md, 500, Montserrat, $white-color);
+//   @include stroke_color($white-color,1px,$black-color)
+// }
+// @include desktop {
+//   .home_div__categories_container {
+//     & > div {
+//       height: 316.75px !important;
+//     }
+//     & > div:nth-child(odd) > .home_div__categories {
+//       background-color: rgba($color: #fff, $alpha: 0.2);
+//     }
+//     & > div:nth-child(even) > .home_div__categories {
+//       background: url("/images/home/box-texture.png");
+//       background-repeat: no-repeat;
+//       background-position: center;
+//       background-size: cover;
+//     }
+//   }
+// }
+// @include tablet {
+//   .home_div__categories_container {
+//     & > div:first-child > .home_div__categories,
+//     & > div:nth-child(4) > .home_div__categories {
+//       background-color: rgba($color: #fff, $alpha: 0.2);
+//     }
+//     & > div:nth-child(2) > .home_div__categories,
+//     & > div:nth-child(3) > .home_div__categories {
+//       background: url("/images/home/box-texture.png");
+//       background-repeat: no-repeat;
+//       background-position: center;
+//       background-size: cover;
+//     }
+//   }
+// }
+
+// @include mobile {
+//   .home_div__categories_container {
+//     & > div {
+//       height: 316.75px !important;
+//     }
+//     & > div:nth-child(odd) > .home_div__categories {
+//       background-color: rgba($color: #fff, $alpha: 0.2);
+//     }
+//     & > div:nth-child(even) > .home_div__categories {
+//       background: url("/images/home/box-texture.png");
+//       background-repeat: no-repeat;
+//       background-position: center;
+//       background-size: cover;
+//     }
+//   }
+// }
+.special_cars_pag {
+  background-image: url("/images/home/Group 1124.png");
+}
+.home_div__secial_slider_text_container {
+  background-color: hsla(0, 0%, 7%, 0.831);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.home_div__secial_slider {
+  height: 250px;
+}
+.title_our_brands {
+  @include all_fonts_styles(25px, $fw-bold, UbuntuBold, #000);
+  @include tablet {
+    @include all_fonts_styles(20px, $fw-bold, UbuntuBold, #000);
+  }
+  @include mobile {
+    @include all_fonts_styles(25px, $fw-bold, UbuntuBold, #000);
+  }
+  span {
+    @include all_fonts_styles(25px, 300, UbuntuRegular, #57e1ee);
+    @include tablet {
+      @include all_fonts_styles(20px, 300, UbuntuRegular, #57e1ee);
+    }
+    @include mobile {
+      @include all_fonts_styles(25px, 300, UbuntuRegular, #57e1ee);
+    }
+  }
+}

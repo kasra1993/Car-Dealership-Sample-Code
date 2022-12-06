@@ -1,0 +1,187 @@
+.footer_text_style {
+  @include all_fonts_styles(14px, $fw-bold, LatoBold, #fff);
+
+  &:hover {
+    @include all_fonts_styles(14px, $fw-bold, LatoBold, #48932b);
+  }
+}
+
+.footer_text_style2 {
+  @include all_fonts_styles(14px, $fw-normal, LatoRegular, #fff);
+
+  &:hover {
+    @include all_fonts_styles(14px, $fw-bold, LatoBold, #48932b);
+  }
+}
+
+.footer_border_right {
+  border-right: 2px solid #fff;
+}
+
+.footer_title {
+  @include all_fonts_styles(20px, $fw-bold, AltoneBold, #bcbcbc);
+}
+
+.forms_title {
+  h1 {
+    @include all_fonts_styles(28px, 700, OpenSansBold, #252525);
+  }
+  h3 {
+    @include all_fonts_styles(28px, 500, MontserratRegular, #333);
+  }
+  p {
+    @include all_fonts_styles(14px, 700, MontserratRegular, #333);
+  }
+  h4 {
+    @include all_fonts_styles(16px, 700, OpenSansBold, #252525);
+  }
+}
+.ul_style {
+  li {
+    list-style-type: disc !important;
+    @include all_fonts_styles(14px, 500, OpenSansRegular, #333);
+  }
+  p {
+    @include all_fonts_styles(14px, 500, OpenSansRegular, #333);
+  }
+}
+
+.footer__quich__link {
+  color: $black-color;
+
+  &:hover {
+    color: $black-color;
+  }
+}
+.hours_border {
+  @include desktop {
+    border-right: 1px solid #707070;
+    border-left: 1px solid #707070;
+  }
+}
+@include desktop {
+  .footer_circle-left {
+    width: 10px;
+    height: 10px;
+    background-color: #707070;
+    border-radius: 50px;
+    position: absolute;
+    // transform: translate(500%, 0%);
+    top: 12%;
+    left: -5px;
+  }
+  .footer_circle-right {
+    width: 10px;
+    height: 10px;
+    background-color: #707070;
+    border-radius: 50px;
+    position: absolute;
+    // transform: translate(500%, 0%);
+    top: 12%;
+    right: -5px;
+  }
+}
+@include desktop {
+  .powerBy_border {
+    border-right: 1px solid #707070;
+    border-left: 1px solid #707070;
+  }
+}
+@include tablet {
+  .powerBy_border {
+    border-right: 1px solid #707070;
+    border-left: 1px solid #707070;
+  }
+  .aboutus_border {
+    border-bottom: 1px solid #707070;
+  }
+  .footer_circle_top {
+    width: 10px;
+    height: 10px;
+    background-color: #707070;
+    border-radius: 50px;
+    position: absolute;
+    // transform: translate(500%, 0%);
+    bottom: -3%;
+    left: 10%;
+  }
+}
+
+// .border-bottom-bussineshoures {
+//   border-bottom: 1px solid #949494;
+// }
+
+// .border-bottom-bussineshoures:last-child {
+//   border-bottom: none;
+// }
+
+.text_color_houres_option {
+  color: #999;
+}
+
+.footer_h5__text {
+  @include all_fonts_styles(15px, 500, AltoneRegular, #fff);
+
+  &:hover {
+    @include all_fonts_styles(15px, 500, AltoneRegular, #fff);
+  }
+}
+.direction_h5__text {
+  @include all_fonts_styles(14px, 400, OpenSansRegular, #282829);
+
+  &:hover {
+    @include all_fonts_styles(14px, 400, OpenSansRegular, #282829);
+  }
+}
+
+.footer_menu {
+  @include all_fonts_styles(15px, 500, UbuntuRegular, $white-color);
+
+  &:hover {
+    @include all_fonts_styles(15px, 500, UbuntuRegular, $black-color);
+    background-color: #999;
+  }
+}
+.text_limit_footer-desc {
+  @include all_fonts_styles(15px, $fw-normal, LatoRegular, #686868);
+  max-height: 200px;
+  // background-color: #f6f3f3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  /* number of lines to show */
+  line-clamp: 7;
+  -webkit-box-orient: vertical;
+}
+.link_to_top_btn {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    color: #000;
+  }
+}
+.text_title {
+  h4 {
+    @include all_fonts_styles(16px, 700, OpenSansBold, #252525);
+  }
+  strong {
+    @include all_fonts_styles(14px, 700, OpenSansBold, #333333);
+  }
+  a {
+    @include all_fonts_styles(14px, 400, OpenSansRegular, #252525);
+  }
+  span {
+    @include all_fonts_styles(14px, 700, OpenSansLight, #333333);
+  }
+}
+.footer-images img {
+  width: 130px !important;
+}

@@ -1,0 +1,53 @@
+.contact_us_container {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  & > div {
+    background-image: url("/images/eforms/Comp.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 46rem;
+    @include tablet {
+      min-height: 57rem;
+      background-position-x: 125px;
+    }
+    @include mobile {
+      background-image: none;
+    }
+  }
+}
+.contact_us_container_bgr {
+  background-color: #151515;
+}
+.contact_us_box_container {
+  // background-color: $color-primary;
+  background-image: url("/images/contact-us/Compone.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 14.75rem;
+  @include tablet {
+    min-height: 20.75rem;
+  }
+}
+.contact_us_box_text__header {
+  @include all_fonts_styles($fs-xxmd, $fw-semibold, Bahnschrift, $white);
+}
+.contact_us_box_text__content {
+  @include all_fonts_styles($fs-md, $fw-light, Bahnschrift, $white);
+}
+.contact_us_img__icon {
+  width: 3.2rem;
+  height: auto;
+  object-fit: contain;
+}
+.contact_us_button__style {
+  @include yellow_button(5px);
+  @include all_fonts_styles($fs-md, $fw-normal, Montserrat, $x-gray-color);
+}
+.contact_us_part {
+  background-color: $black-color;
+  @include all_fonts_styles($fs-xxmd, $fw-light, Bahnschrift, $white);
+}

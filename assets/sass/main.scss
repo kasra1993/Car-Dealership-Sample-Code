@@ -1,0 +1,24 @@
+@import "./fonts";
+@import "./variables";
+@import "./mixin";
+@import "./locale";
+@import "./common/index.scss";
+@import "./pages/inventory/index.scss";
+@import "./common/inputs_eforms";
+@import "./pages/our-team/our-team.scss";
+
+@import "./eforms/index.scss";
+
+
+
+// @import "./home/index.scss";
+// ///////////////////////////////////////////
+@import "./pages/main";
+@import "swiper/swiper.scss";
+@import "swiper/components/effect-fade/effect-fade.scss";
+// .modal-background-image {
+//   background-image: url("/images/new/Mask\ Group\ 41.png");
+// }
+// .imp-background-image-form {
+//   background-color: #7a7675 !important;
+// }

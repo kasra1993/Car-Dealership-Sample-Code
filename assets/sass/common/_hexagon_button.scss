@@ -1,0 +1,42 @@
+// .hexagon_button__container {
+//   position: relative;
+//   min-height: 49px;
+//   @include yellow_button(5px);
+//   outline: 2px solid $yellow-color;
+//   &:hover {
+//     color: $black-color !important;
+//   }
+// }
+// .black_border_button__shap {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   @include hexagon_generator($black-color, 55px, 50px);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   &::before {
+//     content: "";
+//     @include hexagon_generator($yellow-color, 50px, 50px);
+//   }
+// }
+// .yellow_border_button__shap {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   @include hexagon_generator($yellow-color, 55px, 50px);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   &::before {
+//     content: "";
+//     @include hexagon_generator($black-color, 60px, 50px);
+//   }
+// }
+// .font_black_button__style {
+//   // @include all_fonts_styles($fs-md, 500, Montserrat, $yellow-color);
+// }
+// .font_yellow_button__style {
+//   // @include all_fonts_styles($fs-md, 500, Montserrat, $black-color);
+//   border-radius: 0;
+// }

@@ -1,0 +1,244 @@
+.cardetail_buttom_icon {
+  width: 30px;
+  position: absolute;
+  transform: translate(345%, -105%);
+
+  @include mobile {
+    transform: translate(295%, -105%);
+  }
+
+  @include tablet {
+    transform: translate(870%, -105%);
+  }
+}
+
+.button_style-btn {
+  background-color: $white-color;
+}
+
+.gray_button {
+  background: $x-gray-color;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: 0 !important;
+
+  &:hover {
+    &::before {
+      transform: rotate(-45deg) scale(20);
+    }
+  }
+
+  &::before {
+    content: "";
+    transition: all ease-in-out 1s;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform-origin: center;
+    transform: rotate(-45deg) scale(0);
+    background: $medium-blue-color !important;
+    z-index: -1;
+    display: block;
+  }
+}
+
+.black_button {
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.white_btn {
+  background-color: #1dc7d8;
+  color: #fff;
+  border-radius: 0px !important;
+
+  &:hover {
+    color: #fff;
+    background-color: #666;
+  }
+}
+
+.red_button {
+  background: #ce242b;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: 0 !important;
+  @include all_fonts_styles($fs-mmlg, $fw-semibold, Bahnschrift, $white);
+  letter-spacing: 2px;
+
+  @include mobile {
+    @include all_fonts_styles(12px, $fw-semibold, Bahnschrift, $white);
+  }
+
+  // height: 35px !important;
+  &:hover {
+    // &::before {
+    //   transform: rotate(-45deg) scale(20);
+    // }
+  }
+
+  // &::before {
+  //   content: "";
+  //   transition: all ease-in-out 1s;
+  //   width: 100%;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   height: 100%;
+  //   transform-origin: center;
+  //   transform: rotate(-45deg) scale(0);
+  //   background: $x-gray-color !important;
+  //   z-index: -1;
+  //   display: block;
+  // }
+}
+
+.vehicle__button__border {
+  border-bottom: 1px solid $white;
+  background-color: transparent;
+  color: #000;
+  width: fit-content !important;
+
+  &:hover {
+    color: $secondary;
+    border-bottom: 1px solid $secondary;
+  }
+}
+
+.green_border_button {
+  border: 1px solid $primary;
+  background-color: transparent;
+  color: $primary;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.light__gray--btn {
+  background-color: $white;
+  border-radius: 5px;
+  border: none;
+  color: $primary;
+}
+
+.green_button {
+  background-color: #48932b;
+  border: none;
+  color: #fff;
+  height: 43px;
+  @include all_fonts_styles(13px, $fw-bold, FiraSansBold, #fff);
+
+  &:hover {
+    background-color: #55bc32;
+  }
+}
+
+@include desktop {
+  .gray_button,
+  .gray_button:hover,
+  .red_button,
+  .red_button:hover {
+    @include all_fonts_styles(14px, $fw-bold, MontserratBold, $white-color);
+  }
+}
+
+@include tablet {
+  .gray_button,
+  .gray_button:hover,
+  .red_button,
+  .red_button:hover {
+    @include all_fonts_styles(14px, $fw-bold, MontserratBold, $white-color);
+  }
+}
+
+@include mobile {
+  .gray_button,
+  .gray_button:hover,
+  .red_button,
+  .red_button:hover {
+    @include all_fonts_styles(12px, $fw-bold, MontserratBold, $white-color);
+  }
+}
+.gold_button {
+  @include all_fonts_styles(14px, 400, OpenSansRegular, #282829);
+  background-color: #d1ad6d;
+  border: none;
+  color: #282829;
+  min-height: 40px;
+  &:hover {
+    @include all_fonts_styles(14px, 400, OpenSansRegular, #282829);
+    background-color: #777;
+    border: none;
+    color: #fff;
+    min-height: 40px;
+  }
+}
+.gold_button_2 {
+  @include all_fonts_styles(14px, 400, OpenSansRegular, #fff);
+  background-color: #d1ad6d;
+  border: none;
+
+  min-height: 40px;
+  &:hover {
+    @include all_fonts_styles(14px, 400, OpenSansRegular, #fff);
+    background-color: #777;
+  }
+}
+
+.gold_button_3 {
+  @include all_fonts_styles(14px, 400, OpenSansSemibold, #fff);
+  background-color: #d1ad6d;
+  border: none;
+
+  min-height: 40px;
+  &:hover {
+    @include all_fonts_styles(14px, 400, OpenSansSemibold, #fff);
+    background-color: #777;
+  }
+}
+.gold_button_4 {
+  @include all_fonts_styles(14px, 400, OpenSansSemibold, #d1ad6d);
+  background-color: transparent;
+  border: 1px solid #d1ad6d;
+  &:hover {
+    @include all_fonts_styles(14px, 400, OpenSansSemibold, #333);
+    background-color: #d1ad6d;
+  }
+}
+.gold_button_5 {
+  @include all_fonts_styles(18px, 400, OpenSansRegular, #fff);
+  background-color: #a78a57;
+  border: none;
+
+  min-height: 40px;
+  &:hover {
+    @include all_fonts_styles(18px, 400, OpenSansRegular, #fff);
+    background-color: #777;
+  }
+}
+.gold_button_6 {
+  @include all_fonts_styles(14px, 400, OpenSansSemibold, #fff);
+  background-color: #a78a57;
+  border: none;
+
+  min-height: 30px;
+  &:hover {
+    @include all_fonts_styles(14px, 400, OpenSansSemibold, #fff);
+    background-color: #777;
+  }
+}
+.select-button {
+  width: 190px !important;
+}
+.footer-read-more-btn {
+  &:hover {
+    border: 1px solid #a78a57 !important;
+    color: #a78a57 !important;
+  }
+}

@@ -1,0 +1,59 @@
+.eforms_form_finance_first_div_conatiner {
+  // background-color: $bg-seconadry;
+  background-image: url(""), url(""), url("");
+  background-position: center, left bottom, right;
+  background-size: 25rem auto, 20.8rem auto, 12rem auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 13rem;
+}
+
+.eforms_form_finance_second_div_conatiner {
+  // background-color: $bg-seconadry;
+  background-image: url(""), url("");
+  background-position: center, right bottom;
+  background-size: 25rem auto, 20.8rem auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 30rem;
+}
+.eforms_form_finance_third_div_conatiner {
+  // background-color: $bg-seconadry;
+  background-image: url(""), url("");
+  background-position: center, right;
+  background-size: 25rem auto, 12rem auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 30rem;
+}
+
+.eform_finance_modal_div__container {
+  background-color: #fff;
+}
+.modal_close_button__style {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 5px;
+  background-color: $secondary;
+  border: none;
+  box-shadow: none;
+  // color: $white-color;
+}
+.eform_finance_modal_img__container {
+  position: absolute;
+  bottom: -20px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.eform_modal_checkbox_div__style {
+  width: 20px;
+  height: 20px;
+  background-color: $xx-gray-color;
+  border: 0.1px solid $xxx-gray-color;
+  border-radius: 3px;
+  color: $yellow-color;
+}
+.finance_department_text {
+  @include all_fonts_styles($fs-xmd, $fw-semibold, Bahnschrift, $black-color);
+}

@@ -1,0 +1,24 @@
+.swiper-pagination-bullet-active {
+  // background-image: url("/images/common/e-forms/Group510.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  width: 30px !important;
+  height: 30px !important;
+  background-color: transparent !important;
+  transform: rotate(360deg);
+  transition: 50s ease-in-out;
+}
+.swiper-pagination-bullet {
+  // display: none !important;
+  background-color: #fff !important;
+  border: 1px solid #fff;
+  width: 10px !important;
+  height: 10px !important;
+  transition: 1s ease-in-out;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0 !important;
+}

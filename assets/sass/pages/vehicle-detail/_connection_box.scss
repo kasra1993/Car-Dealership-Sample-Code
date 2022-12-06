@@ -1,0 +1,72 @@
+// .connection_box_div__container {
+//   cursor: pointer;
+//   min-height: 15.6rem;
+//   &:nth-child(1) > div:first-child,
+//   &:nth-child(3) > div:first-child,
+//   &:nth-child(5) > div:first-child {
+//     height: 100%;
+//     background-color: $yellow-color;
+//     @include all_fonts_styles($fs-xl, $fw-medium, Montserrat, $black-color);
+//   }
+//   &:nth-child(2) > div:first-child,
+//   &:nth-child(4) > div:first-child,
+//   &:nth-child(6) > div:first-child {
+//     height: 100%;
+//     background: url("/images/home/box-texture-2.png");
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     @include all_fonts_styles($fs-xl, $fw-medium, Montserrat, $white-color);
+//     background-color: rgba($color: $white-color, $alpha: 0.1);
+//   }
+//   @include tablet {
+//     &:nth-child(1) > div:first-child,
+//     &:nth-child(4) > div:first-child,
+//     &:nth-child(5) > div:first-child {
+//       height: 100%;
+//       background-color: $yellow-color;
+//       background-image: none !important;
+//       @include all_fonts_styles($fs-xl, $fw-medium, Montserrat, $black-color);
+//     }
+//     &:nth-child(2) > div:first-child,
+//     &:nth-child(3) > div:first-child,
+//     &:nth-child(6) > div:first-child {
+//       height: 100%;
+//       background: url("/images/home/box-texture-2.png");
+//       background-size: cover;
+//       background-repeat: no-repeat;
+//       background-position: center;
+//       @include all_fonts_styles($fs-xl, $fw-medium, Montserrat, $white-color);
+//       background-color: rgba($color: $white-color, $alpha: 0.1);
+//     }
+//   }
+//   @include mobile {
+//     &:nth-child(1) > div:first-child,
+//     &:nth-child(4) > div:first-child,
+//     &:nth-child(5) > div:first-child {
+//       height: 100%;
+//       background-color: $yellow-color;
+//       background-image: none !important;
+//       @include all_fonts_styles($fs-md, $fw-medium, Montserrat, $black-color);
+//     }
+//     &:nth-child(2) > div:first-child,
+//     &:nth-child(3) > div:first-child,
+//     &:nth-child(6) > div:first-child {
+//       height: 100%;
+//       background: url("/images/home/box-texture-2.png");
+//       background-size: cover;
+//       background-repeat: no-repeat;
+//       background-position: center;
+//       @include all_fonts_styles($fs-md, $fw-medium, Montserrat, $white-color);
+//       background-color: rgba($color: $white-color, $alpha: 0.1);
+//     }
+//   }
+//   transition: transform 0.2s ease-in-out;
+//   &:hover {
+//     transform: scale(1.05);
+//   }
+// }
+// // .connection_box_i__icon_container {
+// //   height: 5.6rem;
+// //   width: auto;
+// // }

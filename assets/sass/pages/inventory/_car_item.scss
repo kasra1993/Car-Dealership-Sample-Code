@@ -1,0 +1,338 @@
+.inventory_fomr__container {
+  background-color: transparent;
+}
+
+.advance_filter_select {
+  background-color: #fff !important;
+  border: none !important;
+  border-top: 1px solid #ddd;
+}
+
+.button_icon {
+  width: 30px;
+  position: absolute;
+  transform: translate(-47%, 20%);
+}
+
+.inventory_button__filter {
+  @include hexagon_generator($yellow-color, 45px, 39px);
+}
+.bg-select_box {
+  background-color: #fff;
+
+  ::placeholder {
+    @include hexagon_generator($yellow-color, 45px, 39px);
+  }
+}
+
+// .inventory__border-div {
+
+// }
+.inventory_soldImage-style {
+  position: absolute;
+  top: 30%;
+  left: 0;
+
+  @include mobile {
+    height: 250px !important;
+  }
+
+  height: 300px !important;
+
+  @include tablet {
+    height: 159px !important;
+  }
+
+  @include desktop {
+    height: 129px !important;
+  }
+}
+
+.inventory_div__car_iamge_conatiner_img {
+  position: relative;
+}
+
+.paginationBttns {
+  display: flex;
+  justify-content: center;
+  & .next {
+    position: static;
+    transform: none;
+  }
+  & .paginationActive {
+    background-color: #bdc3c7;
+    color: #fff !important;
+  }
+  & > li {
+    margin-right: 20px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    color: #717374 !important;
+    font-size: 13px;
+    align-self: center;
+
+    &:hover {
+      background-color: #bdc3c7;
+    }
+    & a {
+      color: #717374;
+    }
+  }
+}
+
+.inventory_div__car_iamge_conatiner {
+  position: relative;
+
+  .inventory_div__car_iamge_conatiner_img {
+    z-index: -1;
+    object-fit: contain;
+  }
+
+  & > div {
+    background-color: $bg-primary;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+  }
+}
+
+// .inventory_p__car_special {
+//   @include all_fonts_styles($fs-xxmd, 400, Corbert, $red-color);
+// }
+
+.inventory_p__sellprice_line {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    transform: rotate(5deg) translateX(-50%) translateY(-50%);
+    background-color: red;
+  }
+}
+
+.inventory_div__car_conatiner {
+  // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  // border: 1px solid #ddd;
+  // background-color: #f9f9f9;
+  // &::after {
+  //   content: "";
+  //   display: block;
+  //   width: 100%;
+  //   height: 2px;
+  //   background-color: transparent;
+  // }
+}
+
+.inventory__table__backgroundcolor--div {
+  border-top: 1px solid $brown-color;
+  background-color: $gray-4;
+}
+
+.inventory_border_wrapper {
+  border: 0.5px solid #fff;
+  background-color: #f9f9f9 !important;
+}
+
+@include xldesktop {
+  .inventory_div__car_conatiner {
+    // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    // border: 1px solid #ddd;
+    // min-height: 240px;
+  }
+
+  .inventory_p__price {
+    @include all_fonts_styles(35px, 700, OswaldBold, #a78a57);
+  }
+
+  .inventory_a__title {
+    position: relative;
+    @include all_fonts_styles(25px, 900, OswaldBold, #333);
+
+    // &:after {
+    //   content: "";
+    //   width: 55px;
+    //   height: 2px;
+    //   background-color: $dark-gray-color;
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 10px;
+    // }
+    // &:hover {
+    //   @include all_fonts_styles(30px, 700, inherit, #fff);
+    // }
+  }
+
+  .inventory_div__cell {
+    & > p:first-child {
+      @include all_fonts_styles(13px, 500, OpenSansLight, #333);
+    }
+
+    & > p:nth-child(2) {
+      @include all_fonts_styles(14px, 500, OpenSansRegular, #333);
+    }
+  }
+
+  .inventory_p__car_special {
+    @include all_fonts_styles(14px, 700, OpenSansRegular, #333);
+  }
+}
+
+// @media (max-width:1124px) {
+//   .change_1{
+//     width: 100% !important;
+//     display: block !important;
+//   }
+
+// }
+
+@include desktop {
+  .inventory_div__car_conatiner {
+    // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    // border: 1px solid #ddd;
+    // min-height: 240px;
+  }
+
+  .inventory_p__price {
+    @include all_fonts_styles(25px, 700, OswaldBold, #a78a57);
+  }
+
+  .inventory_a__title {
+    position: relative;
+    @include all_fonts_styles(25px, 900, OswaldBold, #333);
+
+    // &:after {
+    //   content: "";
+    //   width: 55px;
+    //   height: 2px;
+    //   background-color: $dark-gray-color;
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 10px;
+    // }
+    &:hover {
+      @include all_fonts_styles(25px, 900, OswaldBold, #333);
+    }
+  }
+
+  .inventory_div__cell {
+    & > p:first-child {
+      @include all_fonts_styles(13px, 500, OpenSansLight, #333);
+    }
+
+    & > p:nth-child(2) {
+      @include all_fonts_styles(14px, 500, OpenSansRegular, #333);
+    }
+  }
+
+  .inventory_p__car_special {
+    @include all_fonts_styles(14px, 700, OpenSansRegular, #333);
+  }
+}
+
+.inventory_div__cell-last-child {
+  @include all_fonts_styles(14px, 700, OpenSansRegular, #333);
+}
+
+.carfax_inventory {
+  // position: absolute;
+  // left: 10px;
+  // bottom: 3px;
+  background-color: transparent !important;
+  width: 100% !important;
+}
+
+@include tablet {
+  .inventory_p__price {
+    @include all_fonts_styles(25px, 700, OswaldBold, #a78a57);
+  }
+
+  .inventory_a__title {
+    @include all_fonts_styles(25px, 900, OswaldBold, #333);
+  }
+
+  .inventory_div__cell {
+    & > p:first-child {
+      @include all_fonts_styles(13px, 500, OpenSansLight, #333);
+    }
+
+    & > p:nth-child(2) {
+      @include all_fonts_styles(14px, 500, OpenSansRegular, #333);
+    }
+  }
+
+  .inventory_p__car_special {
+    @include all_fonts_styles(14px, 700, OpenSansRegular, #333);
+  }
+}
+
+@include mobile {
+  .inventory_p__price {
+    @include all_fonts_styles(20px, 700, OswaldBold, #a78a57);
+  }
+
+  .inventory_a__title {
+    @include all_fonts_styles(20px, 900, OswaldBold, #333);
+  }
+
+  .inventory_div__cell {
+    & > p:first-child {
+      @include all_fonts_styles(13px, 500, OpenSansLight, #333);
+    }
+
+    & > p:nth-child(2) {
+      @include all_fonts_styles(14px, 500, OpenSansRegular, #333);
+    }
+  }
+
+  .inventory_p__car_special {
+    @include all_fonts_styles(14px, 700, OpenSansRegular, #333);
+  }
+}
+
+.inventory_patern {
+  background-image: url("/images/inventory/Patern 2.png");
+}
+.infinite-scroll-component__outerdiv {
+  width: 100%;
+}
+.bg-photo {
+  background-color: #ccc;
+  @include all_fonts_styles(11px, 400, OpenSansRegular, #333);
+}
+.inventory-modal-btn {
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    & a {
+      max-height: 30px;
+      margin-bottom: 10px !important;
+    }
+  }
+  @include desktop {
+    display: flex !important;
+  }
+  // @include tablet {
+  //   display: flex !important;
+  // }
+  @include mobile {
+    display: flex !important;
+  }
+  @media (max-width: 580px) {
+    flex-direction: column !important;
+    & a {
+      max-height: 30px;
+      margin-bottom: 10px !important;
+      width: 100% !important;
+    }
+  }
+}

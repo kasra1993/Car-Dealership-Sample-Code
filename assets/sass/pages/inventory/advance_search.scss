@@ -1,0 +1,30 @@
+.inventory_button__filter_box {
+  @include yellow_button(5px, $black-color, $yellow-color);
+  @include all_fonts_styles($fs-md, 500, Montserrat, $yellow-color);
+  &:hover {
+    color: $black-color !important;
+  }
+}
+.inventory_div__color {
+  @include hexagon_generator($black-color, 33px, 29px);
+  transition: all ease 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.inventory_form__container {
+  background-color: $white-color;
+}
+.fasearch{
+  color: #333;
+  &:hover{
+    color: #fff !important;
+  }
+}
+.advance__search__div--position {
+  position: relative;
+  z-index: 1;
+  background-color: #dddddd;
+  box-shadow: 0 5px 18px rgb(0 0 0 / 18%) !important;
+  // border: 1px solid #d6d6d6;
+}

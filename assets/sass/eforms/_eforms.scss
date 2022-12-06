@@ -1,0 +1,793 @@
+.contact_us_title {
+  @include all_fonts_styles(36px, $fw-bold, MetroBlack, #fff);
+}
+
+.contact_page_title {
+  @include all_fonts_styles(36px, $fw-bold, MetroBlack, #333);
+}
+
+.contact_page_title_back {
+  @include all_fonts_styles(18px, $fw-bold, MetroBlack, #eaeaea);
+}
+
+.contact_page_text {
+  @include all_fonts_styles(15px, $fw-bold, LatoBold, #747474);
+}
+
+.label_style {
+  @include all_fonts_styles(14px, 500, OpenSansRegular, #333);
+}
+
+.border_style {
+  background-color: black;
+  width: 35%;
+  height: 2px;
+
+  @include tablet {
+    width: 20%;
+  }
+
+  @include mobile {
+    width: 15%;
+  }
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 250px;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #f6f6f6;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #48932b;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.icon_border {
+  background-color: #48932b;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}
+
+.finance_form_container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 30px;
+}
+
+.textus_image {
+  height: 600px;
+
+  @include mobile {
+    height: 400px;
+  }
+
+  @include tablet {
+    height: 400px;
+  }
+}
+
+.textus_form {
+  position: relative;
+  transform: translateX(10%);
+  z-index: 50;
+
+  @include tablet {
+    transform: translateX(0%);
+    transform: translateY(-20%);
+  }
+
+  @include mobile {
+    transform: translateX(0%);
+    transform: translateY(-20%);
+  }
+}
+
+.privacy_title {
+  @include all_fonts_styles(28px, 700, OpenSansBold, #252525);
+}
+
+.privacy_title_sub {
+  @include all_fonts_styles(22px, $fw-bold, MetroBlack, #fff);
+}
+
+.privacy_text {
+  @include all_fonts_styles(15px, $fw-normal, inherit, #fff);
+
+  strong {
+    @include all_fonts_styles(18px, $fw-bold, inherit, #1dc7d8);
+  }
+}
+
+.eforms_label {
+  @include all_fonts_styles(14px, 400, OpenSansRegular, #333);
+}
+
+.bg_eforms_contactInfo {
+  background-color: #f2f2f2;
+}
+
+.bookAppointment-img::after {
+  background-image: url("/images/Rectangle 3.png");
+}
+
+.eforms_form_div_conatiner {
+  // clip-path: polygon(
+  //   12% 29%,
+  //   0 19%,
+  //   0 0,
+  //   100% 0,
+  //   100% 19%,
+  //   89% 27%,
+  //   89% 71%,
+  //   100% 82%,
+  //   100% 100%,
+  //   0 100%,
+  //   0 83%,
+  //   12% 71%
+  // );
+  // background-color: $bg-seconadry;
+  // background-image: url("/images/common/e-forms/eform-background.png"),
+  //   url("/images/common/e-forms/full-circle-eform-form.png"),
+  //   url("/images/common/e-forms/eform-header-texture.png");
+  // background-position: center, left bottom, right;
+  // background-size: 25rem auto, 20.8rem auto, 12rem auto;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // min-height: 43.75rem;
+}
+
+// .eforms_special_cars_div_conatiner {
+//   background-color: $primary;
+//   background-image: url("/images/common/e-forms/full-circle-eform-form.png"),
+//     url("/images/common/e-forms/full-circle-eform-form.png"),
+//     url("/images/common/e-forms/eform-header-texture-transparent.png");
+//   background-position: right, bottom, left;
+//   background-size: 12rem auto;
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+//   min-height: 40rem;
+// }
+.eforms_form_section_div__container {
+  // background-image: url("/images/eforms/32.png");
+  // background-color: $white-color;
+  // box-shadow: 0 1px 6px 1px rgba($color: #000000, $alpha: 0.16);
+  // -webkit-box-shadow: 0 1px 6px 1px rgba($color: #000000, $alpha: 0.16);
+}
+
+::-webkit-calendar-picker-indicator {
+  color: #fff !important;
+  margin-right: -0.35em; // @note Harmonisation avec les icônes remplacées.
+  filter: invert(48%) sepia(30%) saturate(0%) hue-rotate(203deg) brightness(90%)
+    contrast(95%); // @note Harmonisation avec les icônes remplacées @see https://stackoverflow.com/a/43960991/4960244
+  cursor: pointer;
+}
+
+.eforms_div__container {
+  position: relative;
+  top: 35%;
+  background-color: $white-color;
+  border: none;
+  // padding-top: 23rem !important;
+  border-radius: 10px;
+}
+
+.eforms_inventory_div__container {
+  position: relative;
+  top: 35%;
+  background-color: #242424;
+  border: none;
+  // padding-top: 23rem !important;
+  border-radius: 10px;
+}
+
+.eforms_modal_div__container {
+  // background-color: $x-dark-blue-color;
+  border: none;
+  border-radius: 10px;
+}
+
+.vehicleeforms_input_container,
+.vehicleeforms_input_container:focus {
+  background-color: #b8b8b8;
+  border: 2px solid #d2d2d2;
+  border-radius: 0 !important;
+  height: 45px;
+  @include all_fonts_styles($fs-xmd, $fw-normal, inherit, $black-color);
+
+  &::placeholder {
+    @include all_fonts_styles($fs-sm, $fw-normal, inherit, $black-color);
+  }
+
+  &:disabled {
+    background-color: rgba($color: $gray-color, $alpha: 0.5) !important;
+    color: $white-color !important;
+  }
+}
+
+.eforms_input_container,
+.eforms_input_container:focus {
+  background: transparent;
+  // box-shadow: 0px 3px 6px #00000019;
+  border: 1px solid rgb(204, 204, 204);
+
+  color: #fff;
+
+  border-radius: 3px;
+  height: 38px !important;
+  @include all_fonts_styles(14px, $fw-normal, inherit, #fff);
+
+  &::placeholder {
+    @include all_fonts_styles(14px, $fw-normal, inherit, #fff);
+  }
+
+  &:disabled {
+    background-color: rgba($color: $gray-color, $alpha: 0.5) !important;
+    // color: $white-color !important;
+  }
+}
+
+.vehicleeforms_textarea_container,
+.vehicleeforms_textarea_container:focus {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px !important;
+  @include all_fonts_styles($fs-xmd, $fw-normal, inherit, #fff);
+
+  &::placeholder {
+    @include all_fonts_styles($fs-sm, $fw-normal, inherit, #fff);
+  }
+
+  &:disabled {
+    background-color: rgba($color: $gray-color, $alpha: 0.5) !important;
+    // color: $white-color !important;
+  }
+}
+
+.eforms_textarea_container,
+.eforms_textarea_container:focus {
+  background: transparent;
+  border: 1px solid rgb(204, 204, 204);
+  color: #000 !important;
+  border-radius: 3px;
+  @include all_fonts_styles(14px, $fw-normal, inherit, #fff);
+
+  &::placeholder {
+    @include all_fonts_styles(14px, $fw-normal, inherit, #fff);
+  }
+
+  &:disabled {
+    background-color: rgba($color: $gray-color, $alpha: 0.5) !important;
+    color: $white-color !important;
+  }
+}
+
+.poligon {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: red;
+  box-sizing: border-box;
+  clip-path: polygon(
+    4% 29%,
+    0 19%,
+    0 0,
+    100% 0,
+    100% 19%,
+    96% 27%,
+    96% 71%,
+    100% 82%,
+    100% 80%,
+    0 80%,
+    0 83%,
+    4% 71%
+  );
+}
+
+.poligon .selectBox {
+  position: absolute;
+  top: 2px;
+  /* equal to border thickness */
+  left: 2px;
+  /* equal to border thickness */
+  width: 146px;
+  /* container height - (border thickness * 2) */
+  height: 146px;
+  /* container height - (border thickness * 2) */
+
+  clip-path: polygon(
+    4% 29%,
+    0 19%,
+    0 0,
+    100% 0,
+    100% 19%,
+    96% 27%,
+    96% 71%,
+    100% 82%,
+    100% 80%,
+    0 80%,
+    0 83%,
+    4% 71%
+  );
+}
+
+.eforms_advancesearch_input_select_container,
+.eforms_advancesearch_input_select_container:focus {
+  // clip-path: polygon(
+  //   4% 29%,
+  //   0 19%,
+  //   0 0,
+  //   100% 0,
+  //   100% 19%,
+  //   96% 27%,
+  //   96% 71%,
+  //   100% 82%,
+  //   100% 80%,
+  //   0 80%,
+  //   0 83%,
+  //   4% 71%
+  // );
+  // z-index: 10000;
+  // background-color: red;
+
+  border: none;
+  border-radius: 5px !important;
+  @include all_fonts_styles($fs-xmd, $fw-normal, inherit, $bg-input-light);
+
+  &::placeholder {
+    @include all_fonts_styles($fs-sm, $fw-normal, inherit, $placehilder-dark);
+  }
+
+  &:disabled {
+    background-color: rgba($color: $gray-color, $alpha: 0.5) !important;
+    color: $white-color !important;
+  }
+}
+
+.eforms_input_select_container,
+.eforms_input_select_container:focus {
+  background: transparent;
+  // box-shadow: 0px 3px 6px #00000019;
+  // border: 1px solid #fff !important;
+  color: #000;
+  height: 38px !important;
+  border-radius: 3px !important;
+  border: 1px solid rgb(204, 204, 204) !important;
+  @include all_fonts_styles(14px, $fw-normal, inherit, #000);
+
+  &::placeholder {
+    @include all_fonts_styles(14px, $fw-normal, inherit, #000);
+  }
+
+  &:disabled {
+    background-color: rgba($color: $gray-color, $alpha: 0.5) !important;
+    color: $white-color !important;
+  }
+}
+
+.eform_button__submit {
+  width: 100%;
+  height: 45px;
+  background-color: $white;
+  border-radius: 0 !important;
+  border: 1px solid $dark-gray-color;
+  @include all_fonts_styles(14px, $fw-normal, inherit, $white-color);
+
+  &:hover {
+    color: #000 !important;
+    background-color: transparent !important;
+  }
+
+  &:disabled {
+    background-color: rgba($color: $primary, $alpha: 0.7);
+  }
+}
+
+// .financial_button__modal_button_selected {
+//   background-color: transparent !important;
+//   border: 1px solid $medium-blue-color !important;
+//   color: $medium-blue-color !important;
+// }
+
+@include desktop {
+  .eform_h4__form_header {
+    @include all_fonts_styles(1.875rem, 400, Roboto, #fff);
+  }
+}
+
+@include tablet {
+  .eform_h4__form_header {
+    @include all_fonts_styles(1.775rem, 400, Roboto, #fff);
+  }
+
+  .special_cars_img__content {
+    min-height: 229px;
+    border-radius: 15px;
+    margin-top: 0.5rem;
+    object-fit: cover;
+  }
+}
+
+@include mobile {
+  .eform_h4__form_header {
+    @include all_fonts_styles(1.775rem, 400, Roboto, #fff);
+  }
+
+  .special_cars_img__content {
+    min-height: 229px;
+    border-radius: 15px;
+    margin-top: 0.5rem;
+    object-fit: cover;
+  }
+}
+
+.eform_main_header-style {
+  position: relative !important;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.eform_main_header-style::after {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background-color: #f4f4f4;
+  margin: 0 10px;
+}
+
+.eforms_modal__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eforms_modal_button__style {
+  @include yellow_button(5px);
+  @include all_fonts_styles($fs-md, $fw-medium, Montserrat, $x-dark-blue-color);
+  width: 100%;
+}
+
+.eforms_modal_input_container,
+.eforms_modal_input_container:focus {
+  border: none;
+  border-radius: 5px;
+  background-color: $dark-blue-color;
+  @include all_fonts_styles($fs-sm, $fw-normal, Montserrat, $white-color);
+
+  &::placeholder {
+    @include all_fonts_styles($fs-sm, $fw-normal, Montserrat, $white-color);
+  }
+
+  &:disabled {
+    background-color: rgba($color: transparent, $alpha: 0.5) !important;
+    color: $white-color !important;
+  }
+}
+
+.eforms_header_div__container {
+  // background-image: url("/images/eforms/Component.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  min-width: 31.52rem;
+  height: 27rem;
+
+  @include tablet {
+    & {
+      min-width: 27rem;
+      background-size: auto;
+    }
+  }
+
+  @include mobile {
+    & {
+      min-width: 12rem;
+      // background-size: auto;
+    }
+  }
+}
+
+.eform_title_h4__style {
+  text-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.5);
+  position: relative;
+  padding-left: 10px !important;
+  line-height: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background-color: $secondary;
+  }
+
+  @include desktop {
+    & {
+      @include all_fonts_styles($fs-xxmd, 500, Montserrat, $white-color);
+    }
+  }
+
+  @include tablet {
+    & {
+      @include all_fonts_styles($fs-xxmd, 500, Montserrat, $white-color);
+    }
+  }
+
+  @include mobile {
+    & {
+      @include all_fonts_styles($fs-md, 500, Montserrat, $white-color);
+    }
+  }
+}
+
+.eforms_list_div__container {
+  background-color: transparent;
+  height: 100%;
+
+  @include mobile {
+    & {
+      margin-left: 0;
+    }
+  }
+}
+
+.eform_list_inputs_div__container {
+  background-color: $xx-gray-color;
+  border-radius: 5px;
+}
+
+.eform_list_input_req__container,
+.eform_list_input_req__container:focus {
+  border-bottom: 2px solid rgba($color: #ffffff, $alpha: 0.2);
+  border-right: 2px solid rgba($color: #ffffff, $alpha: 0.2);
+  border-radius: 0;
+}
+
+.eform_list_input_com__container,
+.eform_list_input_com__container:focus {
+  border-right: 2px solid rgba($color: #ffffff, $alpha: 0.2);
+  border-radius: 0;
+}
+
+.eform_list_trash_icon__style {
+  color: $secondary;
+}
+
+.eform_form_header_div__conatiner {
+  @include all_fonts_styles(28px, 700, OpenSansBold, #333);
+
+  // background: transparent;
+  // background-image: url("/images/eforms/Scroll Patern.png");
+  // background-position: left;
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // backdrop-filter: blur(5px);
+  // position: absolute;
+  // transform: translate(-50%, -50%);
+  // top: 35%;
+  // left: 30%;
+  // z-index: 55;
+
+  @include tablet {
+    @include all_fonts_styles(28px, 700, OswaldBold, #333);
+    // top: 29%;
+  }
+
+  @include mobile {
+    @include all_fonts_styles(28px, 700, OswaldBold, #333);
+    // top: 19%;
+  }
+}
+
+.main_header {
+  font-size: 54px;
+}
+
+// .form_background {
+//   background: linear-gradient(180deg, #242424 0%, #242424 50%, #f3f3f3 50%);
+// }
+
+.forms_desc {
+  @include all_fonts_styles(16px, $fw-bold, AltoneRegular, #fff);
+}
+
+.form_head_background {
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 0%,
+    transparent 0%,
+    transparent 50%,
+    #000 50%
+  );
+}
+
+.Title_Header {
+  @include all_fonts_styles(28px, 700, OpenSansBold, #252525);
+}
+.txt_value {
+  border: 1px solid #d2d2d2;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+}
+.finance_title {
+  h1 {
+    @include all_fonts_styles(28px, 700, OpenSansBold, #252525);
+  }
+  b {
+    @include all_fonts_styles(14px, 500, OpenSansBold, #333);
+  }
+  span {
+    @include all_fonts_styles(14px, 500, OpenSansRegular, #252525);
+  }
+  h4 {
+    @include all_fonts_styles(16px, 500, OpenSansBold, #333);
+  }
+  p {
+    @include all_fonts_styles(14px, 500, OpenSansRegular, #333);
+  }
+}
+
+.featured_eforms {
+  @include all_fonts_styles(28px, 700, OpenSansBold, #252525);
+}
+.image_about_us {
+  @include desktop {
+    max-width: 121px;
+    object-fit: contain;
+  }
+  @include tablet {
+    max-width: 310px;
+    object-fit: contain;
+  }
+  @include mobile {
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+.image_about_us_2 {
+  @include desktop {
+    max-width: 197px;
+    object-fit: contain;
+  }
+  @include tablet {
+    max-width: 660px;
+    object-fit: contain;
+  }
+  @include mobile {
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+
+.header_img_style {
+  height: 450px;
+
+  @include tablet {
+    height: 350px;
+  }
+
+  @include mobile {
+    height: 250px;
+  }
+}
+.eforms_calculator_header {
+  background-color: #d9d9d9;
+}
+.eforms_calculator_icons {
+  background-color: #ccc;
+  border-radius: 0px 5px 5px 0px;
+  color: #333333;
+}
+.eforms_input_container,
+.eforms_input_container:focus {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px !important;
+  height: 34px;
+  @include all_fonts_styles(14px, $fw-normal, OpenSansRegular, #000);
+
+  &::placeholder {
+    @include all_fonts_styles(14px, $fw-normal, OpenSansRegular, #555);
+  }
+
+  &:disabled {
+    background-color: rgba($color: $gray-color, $alpha: 0.5) !important;
+    color: $white-color !important;
+  }
+}
+.calc_title {
+  h1 {
+    @include all_fonts_styles(28px, 700, OpenSansBold, #252525);
+    @include mobile {
+      @include all_fonts_styles(23px, 700, OpenSansBold, #252525);
+    }
+  }
+  h4 {
+    @include all_fonts_styles(18px, 700, OpenSansBold, #252525);
+    @include mobile {
+      @include all_fonts_styles(15px, 700, OpenSansBold, #252525);
+    }
+  }
+}
+.deprtment_title {
+  h1 {
+    @include all_fonts_styles(28px, 700, OpenSansBold, #252525);
+  }
+}
+.deprtment_body {
+  h1 {
+    @include all_fonts_styles(25px, 600, OpenSansLight, #333);
+  }
+  h2 {
+    @include all_fonts_styles(20px, 600, OpenSansBold, #333);
+  }
+  p {
+    @include all_fonts_styles(14px, 600, OpenSansLight, #333);
+    line-height: 27px;
+  }
+  li {
+    @include all_fonts_styles(14px, 600, OpenSansLight, #333);
+    list-style-type: disc !important;
+  }
+}
+
+.ul_style {
+  li {
+    list-style-type: decimal !important;
+  }
+}
+.detail_extra_feature_container {
+  @include all_fonts_styles(13px, 600, OpenSansLight, #333);
+  border-bottom: #000 0.4px dashed;
+}
+.lable_style {
+  font-size: 14px !important;
+}

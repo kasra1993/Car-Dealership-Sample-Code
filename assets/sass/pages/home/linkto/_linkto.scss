@@ -1,0 +1,232 @@
+.link_border {
+  // background-image: url("/images/home/border.png");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // height: 100%;
+  border: 1px solid #707070;
+  position: relative;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: #707070;
+  border-radius: 50px;
+  position: absolute;
+  transform: translate(500%, 0%);
+  top: -5px;
+  left: 10%;
+}
+.white_circle {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50px;
+  // position: absolute;
+}
+.linkto_text_container {
+  @include desktop {
+    min-height: 208px;
+  }
+
+  // @include tablet {
+  //   min-height: 208px;
+  // }
+}
+
+.linkto_img_container {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #c5ff99;
+}
+
+.linkto_img_text_div__container {
+  background-color: #000000ad;
+  height: 180px;
+}
+.text_div__container {
+  a {
+    color: #fff;
+  }
+}
+
+.linkto_title {
+  @include all_fonts_styles(20px, $fw-bold, AltoneBold, #ececec);
+
+  @include tablet {
+    @include all_fonts_styles(18px, $fw-bold, AltoneBold, #ececec);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(13px, $fw-bold, AltoneBold, #ececec);
+  }
+}
+
+.linkto_text {
+  @include all_fonts_styles(15px, $fw-normal, AltoneRegular, #bcbcbc);
+
+  @include tablet {
+    @include all_fonts_styles(12px, $fw-normal, AltoneRegular, #bcbcbc);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(12px, $fw-normal, AltoneRegular, #bcbcbc);
+  }
+}
+
+.linkto_button {
+  @include all_fonts_styles(17px, $fw-normal, AltoneRegular, #282829);
+
+  // text-shadow: 0px 2px 2px #000000d6;
+
+  @include tablet {
+    @include all_fonts_styles(15px, $fw-normal, AltoneRegular, #282829);
+  }
+}
+
+.linkto_button_link {
+  @include all_fonts_styles(15px, $fw-normal, AltoneRegular, #58cc01);
+
+  &:hover {
+    color: #fff;
+  }
+
+  @include tablet {
+    @include all_fonts_styles(12px, $fw-normal, AltoneRegular, #58cc01);
+  }
+}
+
+.button_style {
+  background-color: $gray;
+  border-radius: 5px;
+  width: fit-content;
+
+  &:hover {
+    background-color: $black-color;
+  }
+}
+
+.button_style_slider {
+  transition: all 0.2s;
+  background-color: #1dc7d8;
+  text-shadow: 0px 2px 2px #000000d6;
+  // border-radius: 5px;
+  height: 40px;
+
+  &:hover {
+    background-color: #666666;
+  }
+  a {
+    color: #fff;
+  }
+}
+
+.button_style_finance {
+  background-color: #ececec;
+  border-radius: 5px;
+
+  a {
+    @include all_fonts_styles(15px, $fw-normal, AltoneRegular, #242424);
+  }
+
+  @include tablet {
+    a {
+      @include all_fonts_styles(12px, $fw-normal, AltoneRegular, #242424);
+    }
+  }
+
+  &:hover {
+    background-color: #bcbcbc;
+  }
+}
+
+.button_style_slider_left {
+  background-color: #58cc01;
+  border-radius: 10px 0 0 0;
+
+  &:hover {
+    background-color: #408d05;
+  }
+
+  @include mobile {
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+.button_style_slider_middle {
+  background-color: #47a201;
+  border-radius: 0px;
+
+  &:hover {
+    background-color: #408d05;
+  }
+}
+
+.button_style_slider_right {
+  background-color: #58cc01;
+  border-radius: 0 10px 0 0;
+
+  &:hover {
+    background-color: #408d05;
+  }
+
+  @include mobile {
+    border-radius: 0;
+  }
+}
+
+.video_container {
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  box-shadow: rgb(61 61 61 / 10%) 0px 25px 20px 0px;
+  padding: 40px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  height: auto;
+  transform: translateY(-50px);
+  position: relative;
+  z-index: 55;
+}
+
+// .linkto_img_text_span__container {
+//   background-color: rgba($color: $black-color, $alpha: 0.6);
+//   @include all_fonts_styles($fs-xmd, $fw-semibold, inherit, $white-color);
+//   height: 45px;
+// }
+
+.approved_video_title {
+  @include all_fonts_styles(36px, $fw-bold, MetroBlack, #333);
+}
+
+.approved_video_title_green {
+  @include all_fonts_styles(36px, $fw-bold, MetroBlack, #48932b);
+}
+
+.approved_video_text {
+  @include all_fonts_styles(15px, $fw-normal, LatoRegular, #000);
+}
+
+.video_title {
+  @include all_fonts_styles(24px, $fw-bold, MetroBlack, #333);
+}
+
+.video_list_text {
+  @include all_fonts_styles(15px, $fw-bold, LatoRegular, #000);
+  list-style-type: disc;
+}
+.color-gold {
+  color: #d1ad6d !important;
+}
+// .home-heading-size {
+//   @include desktop {
+//     font-size: 25px !important;
+//   }
+//   @include tablet {
+//     font-size: 25px !important;
+//   }
+//   @include mobile {
+//     font-size: 20px;
+//   }
+// }

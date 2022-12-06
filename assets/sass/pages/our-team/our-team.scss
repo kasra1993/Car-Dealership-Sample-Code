@@ -1,0 +1,47 @@
+.our_team_div__container {
+  background: url("/images/about-us/our-team-circle.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 204px 102px;
+  background-attachment: fixed;
+}
+.our__team__img {
+  @include mobile {
+    width: 250px;
+    height: 250px;
+  }
+  @include tablet {
+    width: 350px;
+    height: 350px;
+  }
+  @include desktop {
+    width: 400px;
+    height: 400px;
+  }
+}
+.our__team--background--green {
+  @include mobile {
+    background: url("/images/about-us/Group753.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 300px;
+  }
+  @include desktop {
+    background: url("/images/about-us/Group753.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    height: 458px;
+  }
+  @include tablet {
+    background: url("/images/about-us/Group753.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    height: 458px;
+  }
+}
+.time_work_font {
+  @include all_fonts_styles($fs-sm, $fw-semibold, inherit, $black-color);
+}

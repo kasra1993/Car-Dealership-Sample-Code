@@ -1,0 +1,53 @@
+.vehicle_detail_html_div__container {
+  max-height: 150px;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  &>* {
+    padding: 0;
+    margin: 0;
+  }
+
+  direction: ltr;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $red-color;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $red-color;
+  }
+}
+
+.detail_model-title {
+  @include all_fonts_styles($fs-tmlg, $fw-medium, inherit, $white-color);
+}
+
+.detail_model-title-small {
+  @include all_fonts_styles($fs-xxmd, $fw-normal, inherit, $dark-gray-color);
+}
+
+.detail_context_text {
+  @include all_fonts_styles($fs-xxmd, $fw-normal, inherit, $black-color);
+}
+
+.swiper-pagination-active {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+
+.swiper-pagination_rotate {
+  transform: rotate(360deg);
+  transition: all 0.5s;
+  transition-delay: 250ms;
+}

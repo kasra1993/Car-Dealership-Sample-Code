@@ -1,0 +1,132 @@
+// .google_review_card-style {
+//   background-color: transparent;
+//   // border-radius: 20px;
+//   color: $black-color;
+// }
+// .rate_blog-google {
+//   background-color: $light-blue-color;
+// }
+// .review_rate-google {
+//   background-color: $white-color;
+//   color: $light-blue-color;
+//   transform: scale(1);
+//   transition: 1s ease-in-out;
+//   backface-visibility: hidden;
+// }
+// .review_rate-google:hover {
+//   color: $light-blue-color !important;
+//   // text-shadow: 2px $blue_col
+//   transform: scale(1.05);
+//   transition: 1s ease-in-out;
+//   box-shadow: -11px 4px 53px 0px #fff;
+//   -webkit-box-shadow: -11px 4px 53px 0px #fff;
+//   -moz-box-shadow: -11px 4px 53px 0px #fff;
+// }
+// .link_to_google_review-style {
+//   color: $white-color;
+//   position: relative;
+//   left: -3rem;
+// }
+// .link_to_google_review-style:hover {
+//   color: $light-blue-color !important;
+// }
+// .link_to_google_review-style:hover {
+//   color: #f4f4f4;
+// }
+.text_limit_google_review-desc {
+  @include all_fonts_styles(15px, $fw-normal, LatoRegular, #686868);
+  max-height: 200px;
+  // background-color: #f6f3f3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.google_review_border {
+  // background-image: url("/images/home/Group 1126.png");
+  border: 1px solid #707070;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 185px;
+}
+
+.google_reviews_patern_style {
+  position: absolute;
+  // transform: translate(-95%, 105%);
+  top: -17px;
+  left: 10%;
+
+  @include mobile {
+    top: -23%;
+  }
+
+  @include xldesktop {
+    top: -30%;
+  }
+
+  img {
+    width: 100%;
+    background-color: #000;
+    max-width: 34px;
+    max-height: 34px;
+  }
+}
+
+.google_rev_btn {
+  color: #d1ad6d;
+  text-decoration: underline !important;
+
+  a {
+    text-decoration: underline;
+    color: #d1ad6d;
+  }
+}
+
+.background_style-googlereview {
+  // background-image: url("/images/home/review_back.png");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+}
+
+.name_style {
+  @include all_fonts_styles(15px, $fw-normal, LatoRegular, #686868);
+  background-color: #000;
+}
+
+.name_style_review {
+  @include all_fonts_styles(24px, $fw-normal, UbuntuRegular, #333333);
+}
+
+.text_limit_google_review-desc_page {
+  @include all_fonts_styles(16px, $fw-normal, UbuntuRegular, #333);
+  min-height: 200px;
+  background-color: #f2f2f2;
+
+  // overflow: hidden;
+  // text-overflow: ellipsis;
+  // display: -webkit-box;
+  // -webkit-line-clamp: 4;
+  // /* number of lines to show */
+  // line-clamp: 4;
+  // -webkit-box-orient: vertical;
+  &::before {
+    border-top: 10px solid transparent;
+    border-right: 15px solid #f8f8f8;
+    border-bottom: 10px solid transparent;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -15px;
+    top: 15px;
+    -webkit-transition: all 0.75s ease-out;
+    -moz-transition: all 0.75s ease-out;
+    -ms-transition: all 0.75s ease-out;
+    -o-transition: all 0.75s ease-out;
+    transition: all 0.75s ease-out;
+  }
+}

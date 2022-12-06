@@ -1,0 +1,123 @@
+.feature_special {
+  background: linear-gradient(
+    90deg,
+    #f2eeee 0%,
+    #fff 0%,
+    #ffff 50%,
+    #f2eeee 50%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+
+  p {
+    color: #999;
+    margin-bottom: 20px;
+  }
+
+  .curdoule_feature {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+  }
+
+  .cart_cursoule {
+    margin: 0 10px;
+  }
+
+  .next_btn,
+  .prev_btn {
+    width: 45px;
+    height: 45px;
+    border: $border-light-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 20px 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: $white;
+      border-color: $white;
+    }
+  }
+}
+
+.inventory_style {
+  @include all_fonts_styles(18px, $fw-bold, MontserratBold, #b70814);
+  border-bottom: 1px solid #b70814;
+
+  &:hover {
+    @include all_fonts_styles(18px, $fw-bold, MontserratBold, #b70814);
+  }
+}
+
+.image_clip {
+  @include border-notch(0rem, 4rem, 0rem, 0rem);
+}
+
+.odo_style {
+  @include all_fonts_styles(14px, $fw-normal, MontserratMedium, #000);
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.price_style {
+  @include all_fonts_styles(14px, $fw-bold, AltoneBold, red);
+}
+
+.make_style {
+  @include all_fonts_styles(18px, $fw-bold, AltoneBold, #bcbcbc);
+  min-height: 60px; //border-bottom: 1px solid #AAAAAA;
+}
+
+.special-title {
+  @include all_fonts_styles(30px, $fw-bold, AltoneBold, #ececec);
+
+  @include tablet {
+    @include all_fonts_styles(25px, $fw-bold, AltoneBold, #ececec);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(25px, $fw-bold, AltoneBold, #ececec);
+  }
+}
+
+.review-title {
+  @include all_fonts_styles(30px, $fw-bold, AltoneBold, #242424);
+
+  @include tablet {
+    @include all_fonts_styles(25px, $fw-bold, AltoneBold, #242424);
+  }
+
+  @include mobile {
+    @include all_fonts_styles(25px, $fw-bold, AltoneBold, #242424);
+  }
+}
+
+.special-text {
+  @include all_fonts_styles(16px, $fw-normal, AltoneRegular, #bcbcbc);
+}
+
+.special_inventory_image {
+  position: relative;
+  width: 100%;
+  height: 200px !important;
+  object-fit: contain !important;
+  z-index: 0;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 70%;
+  //   height: 5px;
+  //   background-color: #58cc01;
+  //   bottom: -5px;
+  //   left: 15%;
+  //   z-index: 5;
+  // }
+}

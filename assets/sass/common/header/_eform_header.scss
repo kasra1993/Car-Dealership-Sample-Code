@@ -1,0 +1,73 @@
+// .eforms_header_div__container {
+//   background-image: url("/images/eforms/Component.png");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+// }
+.eforms_header_img__container {
+  position: relative;
+  width: 100%;
+  height: 16.2rem;
+  z-index: 15;
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @include desktop {
+    & {
+      max-width: 100%;
+    }
+  }
+  @include tablet {
+    & {
+      max-width: 100%;
+    }
+  }
+}
+.eforms_header_title__container {
+  @include all_fonts_styles($fs-xxxl, inherit, inherit, $white-color);
+  text-align: center;
+  padding-top: 30px;
+}
+.eforms_header_desc__container {
+  @include all_fonts_styles($fs-md, $fw-normal, inherit, $color-secondary);
+  z-index: 10;
+}
+.eforms_header_image_texture_img {
+  position: absolute;
+  bottom: 0;
+  left: 80%;
+  z-index: -1 !important;
+  & > img {
+    width: 18.1875rem;
+    height: auto;
+    object-fit: contain;
+    transform: translateY(48px);
+    @include tablet {
+      transform: translateY(16px) !important;
+    }
+  }
+
+  @include mobile {
+    & {
+      display: none;
+    }
+  }
+}
+.eforms_header_image_texture_circle_img {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: -1 !important;
+  & > img {
+    width: 12.1875rem;
+    height: auto;
+    object-fit: contain;
+  }
+  @include mobile {
+    & {
+      display: none;
+    }
+  }
+}

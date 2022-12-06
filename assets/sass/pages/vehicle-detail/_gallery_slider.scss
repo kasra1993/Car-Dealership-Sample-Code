@@ -1,0 +1,343 @@
+.detail_wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sold_out_image-styles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+.gallery_slider_p__price {
+  @include all_fonts_styles($fs-xl, 400, Ubuntu, $red-color);
+}
+.gallery_slider_p_price__crossline {
+  position: relative;
+  width: fit-content;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 110%;
+    height: 3px;
+    background-color: $white-color;
+    transform: rotate(-10deg);
+  }
+}
+
+@include desktop {
+  .gallery_slider_div__container {
+    background-position: -30vw center;
+  }
+}
+@include tablet {
+  .gallery_slider_div__container {
+    background-position: center;
+    background-size: cover;
+  }
+}
+@include mobile {
+  .gallery_slider_div__container {
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.gallery_slider_modal__div_container {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  z-index: 1000;
+}
+.gallery_slider_i_close_fullscreen__icon {
+  position: fixed;
+  top: 24%;
+  right: 1%;
+  color: $white-color;
+  cursor: pointer;
+  z-index: 55555555 !important;
+}
+.gallery_slider_nav_button__style {
+  color: $white-color;
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  top: 50%;
+  z-index: 1000;
+}
+.gallery_slider_prev_button__style {
+  left: 0;
+}
+.gallery_slider_next_button__style {
+  right: 0;
+}
+.gallery_slider_image__div_container {
+  & > img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid $dark-gray-color;
+    padding: 3px;
+  }
+}
+.detail_slide_content {
+  position: absolute;
+  bottom: 0;
+  // left: 50%;
+  z-index: 555;
+}
+.detail_slider_background {
+  background-image: url("/images/home/MaskGroup1.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 70%;
+  img {
+    height: 87vh;
+  }
+}
+
+.inventory_soldImage-style {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.location_detail_container {
+  background-color: #474747;
+  border-radius: 8px;
+  position: relative;
+  transform: translateX(-10%);
+
+  @include mobile {
+    transform: translateX(0);
+  }
+}
+
+.gallery_slider_p_price__crossline {
+  position: relative;
+  width: fit-content;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 110%;
+    height: 3px;
+    background-color: $white-color;
+    transform: rotate(-10deg);
+  }
+}
+
+.gallery_slider_div__img_content_container {
+  height: 100%;
+  cursor: pointer;
+
+  &::after {
+    background: none !important;
+  }
+
+  & > img {
+    max-height: none !important;
+  }
+
+  @include mobile {
+    & {
+      height: auto;
+    }
+  }
+}
+
+.detail_soldImage-style {
+  position: absolute;
+  z-index: 555;
+  top: 2%;
+  left: 0;
+
+  @include mobile {
+    top: 15%;
+  }
+}
+
+.DetaileProductCustomrWeb-title {
+  @include all_fonts_styles($fs-mxl, $fw-bold, NunintoBold, $white-color);
+
+  @include tablet {
+    @include all_fonts_styles($fs-xl, $fw-bold, NunintoBold, $white-color);
+  }
+
+  @include mobile {
+    @include all_fonts_styles($fs-xxmd, $fw-bold, NunintoBold, $white-color);
+  }
+}
+
+.DetaileProductCustomrWeb-price {
+  @include all_fonts_styles(30px, 7000, OpenSansBold, #a78a57);
+}
+
+.gallery_slider_thmb__container {
+  cursor: pointer;
+
+  .gallery_slider_thmb_img__container {
+    position: relative;
+    border-radius: 8px 0px 0px 8px;
+    & > img {
+      // height: 2rem;
+      width: 100%;
+      height: 100%;
+      object-fit: unset;
+    }
+
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   background: linear-gradient(
+    //     180deg,
+    //     rgba($color: $dark-black-color, $alpha: 0.6) 0%,
+    //     rgba($color: $light-gray-color, $alpha: 0.6) 100%
+    //   );
+    // }
+
+    &:hover {
+      &::after {
+        background: none;
+      }
+    }
+  }
+}
+
+.gallery_slider_thmb_left_conrner__container {
+  // &:nth-child(1) {
+  //   border-top-left-radius: 20px;
+  // }
+  // &:nth-child(3) {
+  //   border-bottom-left-radius: 20px;
+  // }
+}
+
+.gallery_slider_thmb_right_conrner__container {
+  border-top-left-radius: 0 !important;
+  // border-top-right-radius: 20px;
+}
+
+.gallery_slider_div__img_container {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery_slider_i_fullscreen__icon {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  // @include mobile {
+  //   bottom: 0px;
+  // }
+}
+
+.gallery_slider_modal__div_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  z-index: 1000;
+}
+
+.gallery_slider_i_close_fullscreen__icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: $white-color;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.gallery_slider_nav_button__style {
+  color: $white-color;
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  top: 50%;
+  z-index: 10000;
+}
+
+.gallery_slider_prev_button__style {
+  left: 0;
+}
+
+.gallery_slider_next_button__style {
+  right: 0;
+}
+
+.gallary_dealership_business_name_div_conatiner {
+  @include all_fonts_styles($fs-xl, $fw-normal, AltoneTrial, $white-color);
+}
+
+.gallary_dealership_info_div_conatiner {
+  @include all_fonts_styles($fs-md, $fw-normal, Montserrat, #bdbcbc);
+}
+
+.gallary_dealership_info_phone_div_conatiner {
+  @include all_fonts_styles($fs-xxmd, $fw-normal, AltoneTrial, $white-color);
+}
+
+.home_page_border_radius-class {
+  border-radius: 8px;
+}
+
+.gallery_slider_buttom__toggle {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  transition: all ease-in-out 0.5s;
+
+  & > svg {
+    transform: rotate(0);
+    transition: all ease-in-out 0.5s;
+  }
+}
+
+.gallery_slider_thumbs_div__container {
+  overflow: hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+    touch-action: pan-x;
+  }
+}
+
+.gallery_slider_thumb_image_div__container {
+  cursor: pointer;
+  height: 100%;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &.active {
+    border: 2px solid $white-color;
+    border-radius: 5px;
+  }
+
+  transition: transform 0.3s ease;
+}

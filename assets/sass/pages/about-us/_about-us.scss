@@ -1,0 +1,118 @@
+.aboutus_div__container {
+  position: relative;
+  background: url("/images/about-us/Group 753.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+
+  @include mobile {
+    height: 830px;
+  }
+}
+
+.about__us__backgroundteam_bg1 {
+  background-color: #fff;
+}
+
+.about__us__backgroundteam_bg {
+  background-color:#fff;
+
+}
+
+.about__us__backgroundteam_h {
+  font-size: 23px !important;
+
+  @include mobile {
+    font-size: 18px !important;
+  }
+}
+
+.about__us__backgroundteam_bg_2 {
+
+  // background-image: url("/images/eforms/Component.png");
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // height: 411px;
+  @include mobile {
+    // height: 630px;
+  }
+}
+
+.about__us__backgroundteam_text {
+  background-color: #fff;
+}
+
+.about__us__backgroundteam_bg_3 {
+  // background-image: url("/images/eforms/Component.png");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+.about__us__backgroundteam {
+  // position: relative;
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // height: 256px;
+}
+
+.aboutus_h4__title::after {
+  display: block;
+  content: "";
+  width: 55%;
+  height: 3px;
+  background-color: $medium-blue-color;
+}
+
+.aboutus_div__description {
+  @include all_fonts_styles(14px, 400, OpenSansRegular, #333);
+}
+
+@include desktop {
+  .aboutus_div__container {
+    position: relative;
+
+    &>div>img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .aboutus_h4__title {
+    @include all_fonts_styles(50px, $fw-bold, inherit, $black-color);
+  }
+}
+
+@include tablet {
+  .aboutus_div__container {
+    position: relative;
+
+    &>div>img {
+      width: 70%;
+      height: 70%;
+    }
+  }
+
+  .aboutus_h4__title {
+    @include all_fonts_styles(47px, $fw-bold, inherit, $black-color);
+  }
+}
+
+@include mobile {
+  .aboutus_div__container {
+    position: relative;
+
+    &>div>img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  .aboutus_h4__title {
+    @include all_fonts_styles(44px, $fw-bold, inherit, $black-color);
+  }
+}

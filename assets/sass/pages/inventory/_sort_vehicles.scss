@@ -1,0 +1,51 @@
+.sort_select {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  &::placeholder {
+    color: #fff;
+  }
+  &:focus-visible {
+    border: none;
+    outline: none;
+  }
+}
+
+.inventory_sort_div__container {
+  background-color: #f9f9f9;
+  min-height: 5.125rem;
+  @include all_fonts_styles($fs-md, 400, inherit, $white-color);
+}
+.inventory_sort-title {
+  color: $black-color;
+}
+.inventory_count_div__container {
+  @include all_fonts_styles(16px, 500, OpenSansRegular, #333);
+  
+  @include tablet {
+    @include all_fonts_styles(16px, 500, OpenSansRegular, #333);
+  }
+  @include mobile {
+    @include all_fonts_styles(16px, 500, OpenSansRegular, #333);
+  }
+}
+.inventory_sort_button__container {
+  background-color: transparent;
+  @include all_fonts_styles(13px, 400, OpenSansRegular, #333);
+
+  // border: 1px solid $dark-gray-color;
+  &:hover {
+    color:#a78557
+  }
+}
+.ASC {
+  border-top: 3px solid $x-light-gray;
+  outline-offset: 1px;
+  outline: 2px solid $x-light-gray;
+}
+.DESC {
+  border-bottom: 3px solid $x-light-gray;
+  outline: 2px solid $x-light-gray;
+  outline-offset: 1px;
+}

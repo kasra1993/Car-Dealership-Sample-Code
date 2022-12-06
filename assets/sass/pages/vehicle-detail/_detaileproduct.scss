@@ -1,0 +1,33 @@
+.detail_soldImage-style {
+  position: absolute;
+  z-index: 555;
+  @include desktop {
+    top: -29px;
+    left: 825px;
+  }
+  @include tablet {
+    top: -30px;
+    left: 429px;
+  }
+  @include mobile {
+    top: -19px;
+    left: 187px;
+  }
+}
+.detail-price-title {
+  @media (min-width: 1200px) {
+    flex-direction: row !important;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
